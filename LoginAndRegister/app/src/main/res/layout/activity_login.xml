@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="onelance.com.loginandregister.Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:layout_marginTop="90px"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/Etxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/email"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/LEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etxt1"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/Etxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LEmail"
+            android:layout_marginTop="35dp"
+            android:text="@string/password"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/LPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etxt2"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/Login"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LPassword"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:onClick="OnLogin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_text"
+            android:textColor="@color/textColor"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:id="@+id/LSignup"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

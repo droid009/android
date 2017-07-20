@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OneShop</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up_text">New user? SignUp here !</string>
+    <string name="name">Name</string>
+    <string name="RPassword">Password</string>
+    <string name="RCPassword">Confirm Password</string>
+    <string name="Phone">Phone</string>
+    <string name="RSignUp">Register</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>
